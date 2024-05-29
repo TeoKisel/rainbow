@@ -115,7 +115,7 @@
     }
 
     .nav{
-        margin-top: 80px;
+        margin-top: 60px;
     }
 
     .nav_logo img{
@@ -160,6 +160,10 @@
     
     .container{
         width: 340px;
+    }
+
+    .nav{
+        margin-top: 40px;
     }
     
     .nav_logo img{
@@ -219,6 +223,10 @@
     .container{
        width: 300px!important;
    }
+
+   .nav{
+    margin-top: 40px;
+    }
 
    .nav_icon--insta{
     display: none;
