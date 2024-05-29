@@ -37,7 +37,7 @@ html, body {
     text-align: center;
     width: 426px;
     margin-left: 95px;
-    margin-right: 110px;
+    margin-right: 100px;
 }
 
 .nav_list-trands{
@@ -97,6 +97,25 @@ html, body {
     text-decoration: none;
 }
 
+.nav_icon{
+    display: flex;
+}
+
+.nav_icon--insta{
+    width: 30px;
+    height: 30px;
+}
+
+.nav_icon--teleg{
+    margin-left: 23px;
+    margin-right: 17px;
+    width: 30px;
+}
+
+.nav_icon--slash{
+    height: 35px;
+}
+
 .nav_link-trands{
     font-family: 'Montserrat';
     font-style: normal;
@@ -106,10 +125,7 @@ html, body {
     color: #030303;
     text-decoration: none;
 }
-.nav_icon--teleg{
-    margin-left: 23px;
-    margin-right: 17px;
-}
+
 .nav_btn{
     width: 123px;
     height: 43px;
@@ -190,7 +206,7 @@ html, body {
     display: none;
     position: absolute;
     right: 40px;
-    top: 50px;
+    /* top: 50px; */
     display: none;
     gap: 9px;
     flex-direction: column;
@@ -205,7 +221,7 @@ html, body {
 
 .burger_menu-btn{
     height: 1px;
-    background-color: #030303;
+    background-color: #424E44!important;
     width: 25px!important;
     border-radius: 1px;
 }
@@ -218,7 +234,7 @@ html, body {
     right: -350px;
     width: 350px;
     height: 100vh;
-    background-color: #AF2CFF;
+    background-color: #EFF1E8;
     visibility: hidden;
     z-index: 1;
     transition: all 0.5s;
@@ -232,7 +248,7 @@ html, body {
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: #FFFFFF;
+    color: #424E44;
     transition: all 0.5s;
 }
 
@@ -245,7 +261,8 @@ html, body {
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: #FFFFFF;
+    background-color: #424E44;
+    opacity: 50%;
 }
 
 .burger_list-trands{
@@ -325,22 +342,8 @@ html, body {
 
 .footer{
     position: relative;
-    margin-top: 220px;
-    padding-bottom: 180px;
-}
-
-.footer::before{
-    position: absolute;
-    content: url(../images/footer-left.png);
-    left: -50px;
-    bottom: 100px;
-}
-
-.footer::after{
-    position: absolute;
-    content: url(../images/footer-right.png);
-    right: 0px;
-    bottom: -200px;
+    margin-top: 200px;
+    padding-bottom: 150px;
 }
 
 .footer_content{
@@ -351,7 +354,7 @@ html, body {
 }
 
 .footer_logo{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .footer_text{
@@ -372,8 +375,14 @@ html, body {
     font-size: 17px;
     line-height: 21px;
     text-align: center;
+    color: #424E44;
 
 }
+
+.footer_sign-text{
+    text-transform: uppercase;
+}
+
 
 .footer_sign::after{
     content: "";
@@ -409,115 +418,3 @@ html, body {
     filter: drop-shadow(0px 4px 15px rgba(210, 223, 240, 0.3));
     transition: all 1s;
 }
-
-.trands-page_img-main:hover{
-    scale: 1.05;
-}
-
-.trands-page_content-description{
-    
-    box-sizing: border-box;
-    padding: 70px 50px;
-    max-width: 944px;
-    margin-top: -135px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 15px rgba(210, 223, 240, 0.3);
-    border-radius: 10px;
-}
-
-.trands-page_title{
-    opacity: 0;
-    transform: translateX(40px);
-    margin-bottom: 50px;
-}
-
-.trands-page_subtitle{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    color: #030303;
-}
-
-.trands-page_subtitle:nth-child(n+3){
-    margin-top: 20px;
-}
-
-.trands-page_img{
-    margin-top: 36px;
-    filter: drop-shadow(0px 4px 15px rgba(210, 223, 240, 0.3));
-    max-width: 944px;
-    height: 347px;
-    transition: all 1s;
-}
-
-.trands-page_img:hover{
-    scale: 1.05;
-}
-
-@media (max-width: 1199.98px) {
-    .container{
-        width: 960px;
-    }
-
-    .trands-page_img{
-        margin-top: 30px;
-        width: 740px;
-        height: 272px;
-    }
-
-}  
-
-@media (max-width: 991.98px) {
-
-    .container{
-        width: 720px;
-    }
-
-    .nav_list-trands{
-        display: none!important;
-    }
-
-    .trands-page{
-        margin-top: 50px;
-    }
-
-    .trands-page_img{
-        margin-top: 20px;
-        width: 720px;
-        height: 265px;
-    }
-
-} 
-
-@media (max-width: 767.98px) {
-
-    .container{
-        width: 540px;
-    }
-
-    .trands-page_img{
-        margin-top: 28px;
-        width: 540px;
-        height: 198px;
-    }
-    
-
-}
-
-@media (max-width: 575.98px) {
-
-    .container{
-        width: 340px;
-    }
-
-    .trands-page_img{
-        margin-top: 20px;
-        width: 340px;
-        height: 125px;
-    }
-    
-}
-
-        /* TRANDS PAGE STYLES */
