@@ -13,7 +13,8 @@ function onEntry(entry) {
   let observer = new IntersectionObserver(onEntry, options);
   let elements = document.querySelectorAll('.title');
   let cards = document.querySelectorAll('.features_item');
-  let trandsCard = document.querySelectorAll('.trands_card');
+  let catalogCard = document.querySelectorAll('.catalog_card');
+  let catalog_pagesCard = document.querySelectorAll('.catalog-pages_card');
   let animation = document.querySelectorAll('.observer');
   let animationRight = document.querySelectorAll('.observer-right');
 
@@ -24,7 +25,10 @@ function onEntry(entry) {
   for (let elm of cards) {
     observer.observe(elm);
   }
-  for (let elm of trandsCard) {
+  for (let elm of catalogCard) {
+    observer.observe(elm);
+  }
+  for (let elm of catalog_pagesCard) {
     observer.observe(elm);
   }
   for (let elm of animation) {
